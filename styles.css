@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: "Mulish", sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    background-color: green;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+}
+
+.particles {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,.35) 2px, transparent 3px),
+    radial-gradient(circle at 60% 70%, rgba(255,255,255,.32) 1.5px, transparent 3px),
+    radial-gradient(circle at 80% 40%, rgba(255,255,255,.3) 2px, transparent 4px),
+    radial-gradient(circle at 30% 80%, rgba(255,255,255,.18) 1px, transparent 3px);
+  background-size: 200px 200px;
+  animation: float 12s linear infinite;
+}
+
+@keyframes float {
+  from { background-position: 0 0; }
+  to   { background-position: 200px 400px; }
+}
+
+#simularNovamente{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background-color: rgb(238, 255, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.torneio{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-top: 10px;
+}
+
+.proximosJogos, .resultados{
+    width: 80vw;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#jogos{
+    width: 100%;
+    height: 360px;
+    text-align: center;
+    color: #212529;
+    background-color: white;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#simularRodada{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+}
+
+#partidas, #partidasFuturas{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#partidas{
+    height: 250px;
+}
+
+#partidasFuturas{
+    height: 305px;
+}
+
+#partidas p, #partidasFuturas p{
+    font-weight: 600;
+    margin: 2px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.time.casa {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.time.fora {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.placar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 70px;
+  padding: 4px 10px;
+  margin: 0 5px;
+  background: #e6f4ea;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.gol {
+  min-width: 14px;
+  text-align: center;
+}
+
+.proximosJogos{
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.proximosJogos::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;   
+  height: 340px;     
+  border-left: 2px solid gray;
+}
+
+#resultados p{
+    margin: 10px;
+}
+
+.cabDaTabela{
+    background-color: #e9ecef;
+}
+
+.classificacaoDosTimes{
+    width: 90vw;
+    background-color: #f8f9fa;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-top: 20px;
+    color: #212529;
+}
+
+#classificacao {
+    width: 87vw;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#classificacao th,
+#classificacao td {
+    padding: 6px 10px;
+}
+
+#classificacao th.num,
+#classificacao td.num {
+    text-align: right;
+}
+
+.nomeTime {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.escudo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.nomeTexto {
+  white-space: nowrap;
+}
+
+
+#posicoes tr{
+    border-bottom: 1px solid gray;
+}
+
+.colocacao{
+    text-align: center;
+}
+
+#pos1, #pos2, #pos3, #pos4{
+    background-color: #538d22;
+    width: 40px;
+}
+
+#pos5{
+    background-color: #aad576;
+    width: 40px;
+}
+
+#pos6, #pos7, #pos8, #pos9, #pos10, #pos11{
+    background-color: #61a5c2;
+    width: 40px;
+}
+
+#pos17, #pos18, #pos19, #pos20{
+    background-color: #ff002b;
+    width: 40px;
+}
+
+.informacoesClassificacao{
+    margin: 10px 0;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1.7%;
+}
+
+.faseDeGruposLiberta, .qualificacaoLiberta, .faseDeGruposSula, .Rebaixados{
+    display: flex;
+    gap: 4px;
+    margin: 2px 0;
+}
+
+footer{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    margin: 20px 0;
+    padding: 50px 0 50px 0;
+}
+
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.alertaCampeao{
+    height: 370px;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: white;
+    text-align: center;
+    z-index: 2;
+    display: none;
+}
+
+#fecharAlerta{
+    width: 40%;
+    height: 40px;
+    border-radius: 12px;
+    margin: 20px 0;
+    font-size: larger;
+    cursor: pointer;
+    border: none;
+    background-color: #dadada;
+    color: #252422;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+@media (max-width: 700px) {
+    #jogos{
+        height: 720px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resultados, .proximosJogos{
+        width: 100%;
+    }
+
+    #partidas, #partidasFuturas{
+        width: 80%;
+    }
+
+    .proximosJogos::before{
+        border-left: none;
+    }
+}
+

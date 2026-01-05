@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img width="280px" src="simuladorLogo/simulador.png" alt="Simulador do Brasileirão 2026">
+    <button style="margin-bottom: 10px; z-index: 1;" id="simularNovamente">Simular novamente</button>
+    <div class="particles"></div>
+  </header>
+<div class="torneio">
+    <div id="jogos">
+      <div class="resultados">
+        <h1 id="rodada" style="margin-top: 5px;">Rodada não iniciada!</h1>
+        <button id="simularRodada">Simular rodada</button>
+        <div id="partidas"></div>
+      </div>
+      <div class="proximosJogos">
+        <h1 style="margin-top: 5px;">Próximos jogos</h1>
+        <div id="partidasFuturas"></div>
+      </div>
+    </div>
+    <div class="classificacaoDosTimes">
+      <h1 style="padding-left: 20px; padding-top: 10px;">Classificação</h1>
+      <hr style="padding-bottom: 2px; border: none; margin: 10px auto; width: 97%; background-color: #212529;">
+    <table id="classificacao">
+    <thead>
+      <tr class="cabDaTabela">
+        <th>Pos.</th>
+        <th style="text-align: left;">Time</th>
+        <th style="text-align: center;" class="num" id="PTS">PTS</th>
+        <th style="text-align: center;" class="num">J</th>
+        <th style="text-align: center;" class="num">V</th>
+        <th style="text-align: center;" class="num">E</th>
+        <th style="text-align: center;" class="num">D</th>
+        <th style="text-align: center;" class="num">SG</th>
+      </tr>
+    </thead>
+
+    <tbody id="posicoes">
+      
+    </tbody>
+    
+  </table>
+  <div class="informacoesClassificacao">
+    <div class="faseDeGruposLiberta">
+      <div class="caixaGLiberta" style="background-color: #538d22; width: 18px; height: 18px;"></div>
+      <p>Fase de grupos da Libertadores</p>
+    </div>
+    <div class="qualificacaoLiberta">
+      <div class="caixaGLiberta" style="background-color: #aad576; width: 18px; height: 18px;"></div>
+      <p>Qualificação para a Libertadores</p>
+    </div>
+    <div class="faseDeGruposSula">
+      <div class="caixaGLiberta" style="background-color: #61a5c2; width: 18px; height: 18px;"></div>
+      <p>Fase de grupos da Copa Sulamericana</p>
+    </div>
+    <div class="Rebaixados">
+      <div class="caixaGLiberta" style="background-color: #ff002b; width: 18px; height: 18px;"></div>
+      <p>Rebaixados para o Brasileirão série B</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="overlay">
+  <div class="alertaCampeao">
+  </div>
+</div>
+<footer>
+  <p>&copy; Davi Duarte. Todos os direitos reservados.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
