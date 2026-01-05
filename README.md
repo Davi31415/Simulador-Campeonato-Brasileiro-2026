@@ -1,0 +1,1 @@
+# Simulador-Campeonato-Brasileiro-2026
