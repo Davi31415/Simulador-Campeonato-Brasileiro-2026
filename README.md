@@ -11,6 +11,7 @@ Com base nesses valores, o sistema calcula **a probabilidade de gol por minuto d
 - JavaScript (ES6+)
 
 ## Link para o projeto
+https://davi31415.github.io/Simulador-Campeonato-Brasileiro-2026/
 
 ## Autor
 Davi Duarte
