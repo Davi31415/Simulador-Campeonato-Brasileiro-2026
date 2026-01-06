@@ -194,10 +194,6 @@ header{
     overflow: scroll;
 }
 
-.tableDaClassificacao{
-    overflow-x: scroll;
-}
-
 #classificacao th,
 #classificacao td {
     padding: 6px 10px;
@@ -331,6 +327,10 @@ footer{
 
     .proximosJogos::before{
         border-left: none;
+    }
+
+    .tableDaClassificacao{
+        overflow-x: scroll;
     }
 }
 
