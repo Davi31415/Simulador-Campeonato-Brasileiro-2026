@@ -665,9 +665,9 @@ function Rodada(){
     const cor = nomeTimeCores.cor;
     const corTexto = nomeTimeCores.corTexto
     let textoCampeao = `
-      <h1 style="font-weight: bold;margin-top: 10px;">${nome}</h1>
-      <h1 style="font-weight: 400;font-size: 25px;margin-top: 5px;">foi campeão do Brasileirão 2026!</h1>
-      <img style=" height: 180px; margin-top: 10px;" src="${src}">
+      <h1 style="font-weight: bold;margin-top: 5px;">${nome}</h1>
+      <h1 style="font-weight: 400;font-size: 25px;margin-top: 5px; height: 70px">foi campeão do Brasileirão 2026!</h1>
+      <img style=" height: 180px" src="${src}">
       <button id="fecharAlerta" style="background-color: ${cor}; color: ${corTexto}">Fechar</button>
     `
     overlay.style.display = "flex";
