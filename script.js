@@ -1,26 +1,25 @@
 const times = [
   { nome: "Athletico-PR", cor: "#D01119", corTexto: "#edede9", escudo: "times/Athletico_Paranaense.png", ataque: 74, defesa: 75, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Atlético-MG", cor: "#000000", corTexto: "#edede9", escudo: "times/Atletico_Mineiro.png", ataque: 84, defesa: 83, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Bahia", cor: "#006CB5", corTexto: "#edede9", escudo: "times/Bahia.png", ataque: 75, defesa: 74, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Botafogo", cor: "#000000", corTexto: "#edede9", escudo: "times/Botafogo.png", ataque: 82, defesa: 84, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Atlético-MG", cor: "#000000", corTexto: "#edede9", escudo: "times/Atletico_Mineiro.png", ataque: 90, defesa: 88, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Bahia", cor: "#006CB5", corTexto: "#edede9", escudo: "times/Bahia.png", ataque: 73, defesa: 72, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Botafogo", cor: "#000000", corTexto: "#edede9", escudo: "times/Botafogo.png", ataque: 84, defesa: 83, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
   { nome: "Chapecoense", cor: "#159322", corTexto: "#edede9", escudo: "times/Chapecoense.png", ataque: 63, defesa: 62, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Corinthians", cor: "#000000", corTexto: "#edede9", escudo: "times/Corinthians.png", ataque: 80, defesa: 83, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Corinthians", cor: "#000000", corTexto: "#edede9", escudo: "times/Corinthians.png", ataque: 82, defesa: 83, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
   { nome: "Coritiba", cor: "#003928", corTexto: "#edede9", escudo: "times/Coritiba.png", ataque: 62, defesa: 61, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Cruzeiro", cor: "#2B519F",  corTexto: "#edede9", escudo: "times/Cruzeiro.png", ataque: 83, defesa: 83, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Flamengo", cor: "#C22A1E", corTexto: "#edede9", escudo: "times/Flamengo.png", ataque: 88, defesa: 86, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Fluminense", cor: "#A0002B", corTexto: "#edede9", escudo: "times/Fluminense.png", ataque: 84, defesa: 81, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Grêmio", cor: "#0581C0", corTexto: "#252422", escudo: "times/Gremio.png", ataque: 80, defesa: 81, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Internacional", cor: "#E60107", corTexto: "#edede9", escudo: "times/Internacional.png", ataque: 79, defesa: 81, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Mirassol", cor: "#F6E917", corTexto: "#252422", escudo: "times/Mirassol.png", ataque: 67, defesa: 68, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Palmeiras", cor: "#006434", corTexto: "#edede9", escudo: "times/Palmeiras.png", ataque: 86, defesa: 88, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "RB Bragantino", cor: "#D7183D", corTexto: "#edede9", escudo: "times/RB_Bragantino.png", ataque: 77, defesa: 74, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Cruzeiro", cor: "#2B519F",  corTexto: "#edede9", escudo: "times/Cruzeiro.png", ataque: 80, defesa: 81, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Flamengo", cor: "#C22A1E", corTexto: "#edede9", escudo: "times/Flamengo.png", ataque: 90, defesa: 88, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Fluminense", cor: "#A0002B", corTexto: "#edede9", escudo: "times/Fluminense.png", ataque: 83, defesa: 81, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Grêmio", cor: "#0581C0", corTexto: "#252422", escudo: "times/Gremio.png", ataque: 81, defesa: 82, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Internacional", cor: "#E60107", corTexto: "#edede9", escudo: "times/Internacional.png", ataque: 82, defesa: 85, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Mirassol", cor: "#F6E917", corTexto: "#252422", escudo: "times/Mirassol.png", ataque: 65, defesa: 64, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Palmeiras", cor: "#006434", corTexto: "#edede9", escudo: "times/Palmeiras.png", ataque: 89, defesa: 90, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "RB Bragantino", cor: "#D7183D", corTexto: "#edede9", escudo: "times/RB_Bragantino.png", ataque: 75, defesa: 73, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
   { nome: "Remo", cor: "#161923", corTexto: "#edede9", escudo: "times/Remo.png", ataque: 60, defesa: 60, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
   { nome: "Santos", cor: "#000000", corTexto: "#edede9", escudo: "times/Santos.png", ataque: 74, defesa: 70, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "São Paulo", cor: "#FE0000", corTexto: "#edede9", escudo: "times/Sao_Paulo.png", ataque: 82, defesa: 81, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
-  { nome: "Vasco", cor: "#000000", corTexto: "#edede9", escudo: "times/Vasco.png", ataque: 75, defesa: 73, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "São Paulo", cor: "#FE0000", corTexto: "#edede9", escudo: "times/Sao_Paulo.png", ataque: 82, defesa: 83, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
+  { nome: "Vasco", cor: "#000000", corTexto: "#edede9", escudo: "times/Vasco.png", ataque: 72, defesa: 71, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 },
   { nome: "Vitória", cor: "#E40613", corTexto: "#edede9", escudo: "times/Vitoria.png", ataque: 66, defesa: 65, pts: 0, j: 0, v: 0, e: 0, d: 0, sg: 0 }
 ];
-
 
 const torneio = [
   // Rodada 1
@@ -780,5 +779,6 @@ for (let i=0; i<20; i++){
       let posicoes = document.getElementById("posicoes");
       posicoes.appendChild(informacoes)
 }
+
 
 
